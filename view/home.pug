@@ -1,0 +1,177 @@
+extends base.pug
+
+block scripts
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')  
+block style
+ style
+   include ../static/home.css
+
+block content
+ section#head
+    section#left
+       h1 We Love Delicious Foods
+       p We love to give the best service to our custromers! Enjoy your Weekend Here!
+       p Enjoy Our services..
+     
+       ul
+          li #[a(href="/contact") Book now]
+    section#right 
+       div.imgs
+          img(src="/static/bg_1.jpg", id="one")
+          img(src="/static/bg_2.jpg", id="two")
+          img(src="/static/bg_3.jpg", id="three")
+
+ section#mid
+    div.left
+     img(src="/static/about.jpg", alt="")
+    div.right
+      h2 About
+      h1 Welcome to kusina Resturant!
+      p On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+      h2 Special Recipee
+      div.recipe
+        div.first_img
+         img(src="/static/dessert-1.jpg", alt="")
+         p Australlian Desert
+        div.sec_img
+         img(src="/static/dinner-3.jpg", alt="")
+         p Thai Diiner
+        div.sec_img
+         img(src="/static/breakfast-9.jpg", alt="")
+         p Dumplings
+ section#exp
+   div.box
+       h3#year 18
+        p.display Years Of Experinces
+   div.box
+         h3#customer 20,000
+         p.display Happy Customers
+   div.box
+         h3.change 522
+         p.display Finished Projects
+   div.box
+         h3.change 300
+         p.display Working Day
+ section#menu
+     h1 Our Specialities
+     h2 Our Menu
+     div.brunch
+         h3 Breakfast
+         div.food
+            img(src="/static/dinner-1.jpg", alt="")
+            h3 Grilled beef with potatoes
+            p Meat,potatoes,Ricespan 
+            span $29
+         div.food
+            img(src="/static/dinner-2.jpg", alt="")
+            h3 Grilled Crab with Onion
+            p Meat,potatoes,Rice,nion
+            p $50
+         div.food
+            img(src="/static/dinner-3.jpg", alt="")
+            h3 Manchurian
+            p Meat,potatoes,Ricespan 
+            p $100
+     div.brunch
+         h3 Lunch
+         div.food
+            img(src="/static/dinner-4.jpg", alt="")
+            h3 Honey Chilli potaoes
+            p Meat,potatoes,Ricespan
+            p $67
+         div.food
+            img(src="/static/dinner-5.jpg", alt="")
+            h3 Freid rice
+            p Meat,potatoes,Rice
+            p $89
+         div.food
+            img(src="/static/dessert-5.jpg", alt="")
+            h3 Italian Sweet
+            p Meat,potatoes,Ricespan 
+            span $49
+     div.brunch
+         h3 Dinner
+         div.food
+            img(src="/static/breakfast-6.jpg", alt="")
+            h3 Thai Food
+            p Meat,potatoes,Ricespan 
+            span $29
+         div.food
+            img(src="/static/breakfast-7.jpg", alt="")
+            h3  Chiken Grill
+            p Meat,potatoes,Rice,nion
+            p $50
+         div.food
+            img(src="/static/breakfast-8.jpg", alt="")
+            h3  Fish Fry
+            p Meat,potatoes,Ricespan 
+            p $100
+     div.brunch
+         h3 Dessert
+         div.food
+            img(src="/static/dessert-4.jpg", alt="")
+            h3 Ice cream
+            p Meat,potatoes,Ricespan 
+            span $29
+         div.food
+            img(src="/static/dessert-2.jpg", alt="")
+            h3 Cup cakes
+            p Meat,potatoes,Rice,nion
+            p $50
+         div.food
+            img(src="/static/dessert-3.jpg", alt="")
+            h3 Chocolate cake
+            p Meat,potatoes,Ricespan 
+            p $100
+ section#author
+     h1 Testimony
+     h2  Happy Customers
+     div#first_customer 
+         img(src="/static/person_1.jpg", alt="")
+         p This is the best Cofee Shop in the Town !
+         p Vokalia and Consonantia,there live the blind texts.
+         p Harry Buxx
+          p Customer
+     div#sec_customer
+         img(src="/static/person_2.jpg", alt="")
+         p Far Far away behind the word mountains, far from the countries  Vokalia and Consonantia,there live the blind texts.
+         p Mark Jujar Burg
+         p Customer
+     div#third_customer
+         img(src="/static/person_3.jpg", alt="")
+         p I just loved the Services 
+         p Nikk hanry
+          p Customer
+     div#fourth_customer
+         img(src="/static/person_4.jpg", alt="")
+         p Far Far away behind the word mountains, far from the countries
+         p Vokalia and Consonantia,there live the blind texts.
+         p Author browner 
+          p Customer
+     div.btn_class
+         <button id="btn" onclick="show1()"></button>
+         <button id="btn" onclick="show2()"></button>
+         <button id="btn" onclick="show3()"></button>
+         <button id="btn" onclick="show4()"></button>
+ section#contact
+     div.img
+         img(src="/static/chef-2.jpg", alt="")
+     div.contact_form
+         h1 Book a Table
+         h2 Make A Reservation
+         form(action="/contact" ,method="post")
+               div.fill_form 
+                 input(type="text", placeholder="Enter your Name")
+               div.fill_form
+                 input(type="email", placeholder="Enter your Email")
+               div.fill_form
+                 input(type="adress", placeholder="Enter your Adress")
+               div.fill_form
+                 input(type="number", placeholder="Enter your Number")
+               div.fill_form
+                 input(type="date", placeholder="Date")
+               div.fill_form
+                 input(type="number", placeholder="Persons")
+               <button class="btn">Make A Reservation</button>
+block scripts
+ script(src='../static/jquery.js')

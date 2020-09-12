@@ -1,0 +1,22 @@
+#intro{
+    width:100vw;
+    height: 30rem;
+}
+
+#intro::before{
+    width:100vw;
+    height: 30rem;
+    background: url('/static/bg_4.jpg');
+    content: "";
+    position: absolute;
+    background-size: cover;
+    z-index: -1;
+    opacity:0.9;
+   
+}
+@media (max-width:650px){
+    #intro::before{
+        background-size: center;
+    }
+}
+

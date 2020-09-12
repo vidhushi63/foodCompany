@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    display: inline-block;
+    width: 100%;
+   color: black;
+    opacity: 0.8;
+   background-color: white;
+    position: fixed;
+    
+}
+#navbar #nav_symbol{
+    display: none;
+}
+#navbar h1{
+    display: inline-block;
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    
+}
+#navbar ul{
+    display: flex;
+    float: right;
+    margin-right: 1rem;
+}
+#navbar ul li{
+    list-style: none;
+    padding: 2rem;
+    
+}
+#navbar li a{
+    text-decoration: none;
+    display: flex;
+    color: black;
+}
+#navbar a:hover{
+    border-bottom: 2px solid rgb(248, 109, 130);
+    color: black;
+}
+#head{
+   
+    height: 50rem;
+    display: flex;
+}
+#left{
+    width: 50%;
+    display: inline-flex;
+    flex-direction: column;
+    height: 50rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+       
+}
+#left h1 {
+    
+    display: inline;
+    font-size: 2.5rem;
+  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#left p{
+    color: gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#left ul {
+    margin-top: 2rem;
+    width: 8rem;
+    height: 1rem;
+    background-color: rgb(243, 157, 168);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    display: inline-block;
+    border: 2px solid palevioletred;
+}
+#left li{
+    list-style: none;
+
+}
+#left li a{
+    text-decoration: none;
+    padding: 1rem;
+    color: black;
+}
+#left li a:hover{
+    text-decoration-line:underline ;
+    font-size: 1.1rem;
+    
+}
+#right{
+    display: inline-block;
+    /* overflow: hidden; */
+    
+    width: 50%;
+    height:50rem;
+}
+.imgs{
+   
+    
+    display: inline;
+    /* transition: transform 0.3s linear;
+    transform: translateX(0); */
+}
+.imgs #two {
+    display: none;
+}
+.imgs #three {
+    display: none;
+}
+#right img{
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+    
+    display: inline-block;
+}
+#mid{
+    display: inline-flex;
+    
+}
+#mid .left{
+    width: 44%;
+    display: inline-block;
+    
+}
+#mid .left img{
+    width: 100%;
+    height: 40rem;
+    z-index: -1;
+} 
+#mid .right{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    
+    overflow: auto;
+    height: 40rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+} 
+#mid .right p{
+    padding: 1rem;
+
+}
+#mid .right h2{
+    text-align: left;
+    font-family: fantasy;
+    
+    font-style: italic;
+    color: palevioletred;
+    font-family: 'Cedarville Cursive', cursive;
+}
+#mid .right .recipe{
+    width:100%;
+    display: flex;
+    color: rgb(88, 87, 87);
+    
+    justify-content: center;
+    align-items: center;
+}
+#mid .right img{
+    display: flex;
+    width: 8rem;
+    height: 8rem;
+    padding: 1rem;
+    object-fit: cover;
+    
+}
+
+#exp{
+    width: 100vw;
+    height: 18rem;
+    background-image: url('/static/bg_5.jpg');
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.8;
+    display: inline-flex;
+    justify-content: space-evenly;
+    transition: 2s ease-in-out ;
+    align-items: center;
+    color: white;
+    
+    object-fit: cover;
+    
+ 
+   
+}
+
+
+#exp h3 {
+    
+    font-size: 3.5rem;
+    justify-content: space-evenly;
+}
+#exp p{
+   font-size: 1.2rem;
+   padding: 1rem;
+}
+#menu{
+    justify-content: center;
+    align-items: center;
+   
+    width: 100vw;
+    height:90rem;
+    text-align: center;
+}
+#menu h1 {
+    font-family: 'Cedarville Cursive', cursive;
+    color: palevioletred;
+}
+#menu h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8rem;
+}
+#menu h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+   
+}
+#menu .brunch{
+  
+    padding: 1rem;
+    width: 40%;
+    height: 40rem;
+    margin: 1rem;
+    display: inline-block;
+}
+
+#menu img{
+    width: 7rem;
+    height: 6rem;
+    display: inline-block;
+    border-radius: 50%;
+   
+}
+#menu p:hover{
+   color: rgb(99, 96, 96);
+   text-decoration-line: underline;
+   
+}
+#menu .food{
+    padding: 1rem;
+    border-bottom: 2px dotted gray;
+}
+#menu .food p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+}
+#author{
+    width: 100vw;
+    height: 32rem;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/static/insta-5.jpg');
+    background-position: center center;
+    background-size: cover;
+
+    opacity: 0.9;
+    color: white;
+    text-align: center;
+}
+
+#author img{
+    width: 10rem;
+    height: 7rem;
+    border-radius: 50%;
+    
+}
+#author  img{
+    margin-top: 5rem;
+}
+#author h1{
+    font-family: 'Cedarville Cursive', cursive;
+    color: palevioletred;
+    font-size: 2rem;
+}
+#author h2{
+    font-size: 2rem;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#author #btn{
+    width: 1rem;
+    height: 1rem;
+    background-color: transparent;
+    border: 1px solid white;
+   border-radius: 50%;
+    margin-top: 1rem;
+    margin: 1rem;
+}
+#author #sec_customer ,#third_customer ,#fourth_customer{
+    display: none;
+}
+#author #btn:hover{
+    background-color: rgb(230, 222, 230);
+}
+#author #btn:active{
+    background-color: rgb(155, 58, 58);
+}
+#contact .img{
+    width:45%;
+    height: 30rem;
+    display: inline-block;
+   
+}
+#contact img{
+    width:85%;
+    height: 30rem;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.fill_form{
+    display: inline-block;
+    flex-direction: column;
+    text-align: center;
+    
+    margin: 0.1rem;
+    padding: 0.5rem;
+    width: 40%;
+   
+}
+#contact{
+    
+    display: flex;
+}
+#contact .contact_form{
+    width:50%;
+    display: inline-flex;
+    flex-direction: column;
+    
+    height:30rem;
+    margin: 1rem;
+}
+input {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 0.5em;
+    padding: 0.2rem;
+    display: inline-flex;
+    margin-top: 1rem;
+}
+
+#contact h2{
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+ 
+    
+}
+#contact h1{
+    margin-top: 2rem;
+    color: palevioletred;
+    font-size: 2rem;
+    font-family: 'Cedarville Cursive', cursive;
+}
+#contact .btn{
+    margin-top: 2rem;
+    width: 15rem;
+    height: 3rem;
+    background-color: rgb(243, 157, 168);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin-left: 3rem;
+}
+#contact .btn:hover{
+    background-color: white;
+    font-size: 1.1rem;
+    border: 2px solid rgb(241, 138, 138);
+}
+#footer{
+    width: 100vw;
+    height: 30rem;
+    background-color:black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#footer .left{
+   
+    display: inline-flex;
+    flex-direction: column;
+    
+    width: 30%;
+    height: 20rem;
+    margin-left: 6rem;
+    margin-top: 6rem;
+}
+#footer .left p{
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+#footer h1{
+    text-align: left;
+}
+#footer .right{
+    display: inline-flex;
+    flex-direction: column;
+    width: 35%;
+    height: 20rem;
+    margin-right: 5rem;
+    margin-top: 6rem;
+    float: right;
+}
+#footer .right p{
+    padding: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+#footer span{
+    margin-left: 24rem;
+    
+}
+@media(max-width:700px)
+{
+    #menu{
+        height:180rem;
+        width: 100vw;
+        
+    }
+    #author{
+        width: 100vw;
+        height: 35rem;
+    }
+    #contact .img{
+        display: none;
+    }
+    #contact .contact_form{
+        width:100vw;
+        margin: 2rem;
+        padding: 1rem;
+    }
+    #exp{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 40rem;
+    }
+   
+    #left{
+        display: flex;
+        width:100vw;
+    }
+    #left:before{
+        background: url('/static/bg_3.jpg');
+        content: "";
+        position: absolute;
+        background-position: center;
+        background-size: cover;
+        width: 90%;
+        height: 50rem;
+        padding: 2rem;
+        opacity: 0.7;
+        z-index: -1;
+    }
+    #left p{
+        color: black;
+    }
+    #right{
+        display: none;
+    }
+    #mid .left{
+        display: none;
+    }
+    #mid .right{
+        display: flex;
+        width:100vw;
+        margin-top: 14%;
+        justify-content: center;
+        
+        text-align: center;
+        
+    }
+    #navbar{
+       width:100vw;
+      
+    }
+
+    #left ul{
+
+        border: 2px solid black;
+        background: linear-gradient(white,rgb(247, 231, 231));
+        opacity: 0.6;
+    }
+    #mid .right .recipe{
+        width: 100vw;
+        display: flex;
+        color: rgb(88, 87, 87);
+    }
+    #mid .right img{
+        width: 8rem;
+        height: 6rem;
+        padding: 1rem;
+        
+    }
+
+    #navbar ul{
+    
+        margin-top: 3rem;
+        width:30%;
+        float: left;
+        text-align: center;
+        display: none;
+    }
+   
+    #navbar{
+        position: absolute;
+    }
+    #navbar #nav_symbol{
+        display: block;
+        float: right;
+        margin: 1.2rem;
+        width: 1rem;
+        border: none;
+        background-color: transparent;
+        
+        width:2rem;
+        font-size: 1.4rem;   
+    }
+   
+    #footer{
+        height:5rem;
+    }
+    #footer .left{
+        display: none;
+    }
+    #footer .right{
+        display: none;
+    }
+    #footer span{
+        margin-left: 10%;
+       
+    }
+}

@@ -1,0 +1,16 @@
+#nav{
+    width:10vw;
+    height: 5rem;
+    background-color: white;
+}
+#menu h1{
+    margin-top: 1rem;
+}
+#menu{
+    height:150rem;
+}
+@media (max-width:650px){
+    #menu{
+        height:270rem;
+    }
+}
